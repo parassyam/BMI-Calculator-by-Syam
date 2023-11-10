@@ -1,0 +1,416 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #cfa2f7f6; 
+    z-index: 999; 
+  }
+  
+  .header h1 {
+    font-size: 40px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+  }
+
+  .header span{
+    margin-top: 80px;
+    margin-right: 10px;
+    font-family: 'Fredoka-Regular';
+  }
+
+
+body{
+    background-image: linear-gradient(rgba(0, 89, 255, 0.448), rgba(255, 255, 0, 0.505));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*Font*/
+h1{
+    font-family: 'Fredoka-Regular';
+    text-align: center;
+    font-size: 50px;
+}
+
+#txtBerat{
+    width: 50%;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+p{
+    font: 1em sans-serif;
+
+}
+
+h3{
+    
+    text-align: center;
+}
+
+.MBbadan{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+.feature{
+    width: 50%;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+/*KALKULATOR BMI*/
+.bungkusJenisKelamin {
+    width: 15%;
+    margin: 0 auto;
+    background-color: #E5D4FF;
+    border-radius: 10px;
+}
+
+#jenisKelamin{
+    
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 1px;
+}
+#Pria{
+    margin-left: 40px;
+}
+#radioBtn{
+    margin-left: 1px;
+}
+
+#beratBadan{
+    margin-left: 20px;
+    margin-bottom: 1px;
+}
+
+#umur{
+    margin-left: 20px;
+    margin-bottom: 1px;
+}
+
+#tinggiBadan{
+    margin-left: 20px;
+    margin-bottom: 1px;
+}
+
+#Pria {
+    margin-left: 20px;
+}
+
+#Wanita {
+    margin-left: 20px;
+}
+
+#berat {
+    margin-left: 20px;
+}
+
+#usia {
+    margin-left: 20px;
+}
+
+#tinggi{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#btn-Hitung {
+    background-color: #D0A2F7;
+    border-radius: 5px;
+    border-color: black;
+    margin-left: 65px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#radioBtn{
+    margin-left: 20px;
+}
+
+#btn-Hitung:hover{
+    
+}
+
+#btn-Reset {
+    width: 25%;
+    background-color: #fff5f5;
+    border-radius: 5px;
+    border-color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+/*Hasil*/
+.diantara{
+    width: 50%;
+    margin: 20px auto;
+}
+
+#hasil{
+    margin-top: 90px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.BBLebih{
+    border-radius: 10px;
+    border-style:outset;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #D0A2F7;
+    text-align: center;
+}
+
+#berat-badan-lebih{
+    padding-top: 20px;
+}
+
+#btn-DownloadHasil{
+    background-color:rgba(0, 0, 255, 0.4) ;
+    border-radius: 5px;
+    border-color: black ;
+    margin-bottom: 20px;
+    width: 25%;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.btn-konsultasi{
+    width: 150px;
+    height: 50px;
+    background-color: #0509f777;
+    border-radius: 5px;
+    border-color: black;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btn-registrasi{
+    width: 150px;
+    height: 50px;
+    background-color: #0509f777;
+    border-radius: 5px;
+    border-color: black;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Warna latar belakang saat tombol di-hover */
+
+#btn-Hitung:hover {
+    background-color: #000000a2; 
+}
+
+#btn-Reset:hover {
+    background-color: #000000a2; 
+}
+
+#btn-DownloadHasil:hover {
+    background-color: #000000a2; 
+}
+
+
+.btn-konsultasi:hover {
+    background-color: #000000a2; 
+}
+
+.btn-registrasi:hover {
+    background-color: #000000a2; 
+}
+
+
+
+/*BEBERAPA PENYAKIT*/
+.beberapaPenyakit{
+    border-radius: 10px;
+    border-style:outset;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #D0A2F7;
+    text-align: center;
+}
+
+.beberapaPenyakit{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#kegemukan{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+h3{
+    margin-bottom: px;
+}
+
+h4{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.gPlay{
+    
+    margin-left: 28%;
+   
+    width: 20%;
+    height: 20%;
+}
+
+.appStore{
+    margin-left: 40px;
+    width: 20%;
+    height: 20%;
+}
+
+/* Mengurangi kecerahan gambar saat di-hover */
+a:hover img {
+    filter: brightness(0.7); 
+}
+
+
+/*Animation*/
+.header {
+	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  /*Untuk HP*/
+  @media screen and (max-width: 800px) {
+    .bodyAll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-content: center;
+    }
+
+    #radioBtn{
+        margin-left: 1px;
+    }
+    
+    .bungkusJenisKelamin {
+        width: 50%;
+    }
+    #jenisKelamin{
+            
+    padding-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 1px;
+    }
+
+    #btn-Hitung {
+        width: 50%;
+        margin: px auto 0;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    #berat {
+        max-width: 70%;
+        margin-left: 25px; 
+    }
+    #beratBadan {
+        margin-left: 25px; 
+    }
+    #usia{
+        max-width: 70%;
+        margin-left: 25px;
+    }
+    #umur {
+        margin-left: 25px; 
+    }
+    #tinggi{
+        max-width: 70%;
+        margin-left: 25px;
+    }
+    #tinggiBadan {
+        margin-left: 25px; 
+    }
+    #btn-Hitung {
+        margin-left: 25%;
+    }
+    #btn-DownloadHasil {
+        width: 50%;
+        margin: px auto 0;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #btn-Reset {
+        width: 50%;
+        margin: px auto 0;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .btn-konsultasi{
+        margin-left: 7px;
+
+    }
+
+    .btn-registrasi{
+        margin-left: 7px;
+    }
+
+    .gPlay{
+        margin-left: 60px;
+        width: 90px;
+        height:40px;
+    }
+    .appStore{
+        width: 90px;
+        height: 40px;
+    }
+}
+
