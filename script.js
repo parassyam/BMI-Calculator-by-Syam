@@ -187,8 +187,7 @@ window.onload = function(){
     .addEventListener("click",()=>{
 
         //Menghilangkan div yang gak penting untuk di Download
-        var downloadContainer = document.querySelector('.container');
-        downloadContainer.style.display = 'none';
+
 
         var elementToHide = document.getElementById('btnDnR');
         elementToHide.style.display = 'none';
@@ -215,11 +214,6 @@ window.onload = function(){
             elementToHide.style.display = 'block';
             },3000);
     
-
-        setTimeout(function() {
-        var downloadContainer = document.querySelector('.container');
-        downloadContainer.style.display = 'block';
-        },3000);
 })
 }
 
