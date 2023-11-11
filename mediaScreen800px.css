@@ -106,7 +106,7 @@
     .input-container.focused .labelNama,
     .input-container input:valid + .labelNama {
         
-        top: -16px;
+        top: -8px;
         font-size: 12px;
         
     }
@@ -137,7 +137,7 @@
 .input-container.focused .labelBerat,
 .input-container input:valid + .labelBerat {
     
-    top: -10px;
+    top: -8px;
     font-size: 12px;
     
 }
