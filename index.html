@@ -7,20 +7,25 @@
 
      <!-- Style -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaScreen800px.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     
     <!-- Script
    ================================================== -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js"></script>
 	<script src="script.js"></script>
+
 
 
 </head>
 <body>
 <div class="bodyAll">
 <Header>
-    <div class="header">
-    <h1>BMI Calculator </h1> 
-
+    <div class="header" id="judul">
+    <h1>SYM  BMI  CALCULATOR </h1> 
 </div>
 </Header>
 
@@ -38,19 +43,31 @@
     <input type="radio" id="Wanita" name="jenisKelamin" value="Wanita">
     <label for="Wanita">Wanita</label>
 </div>
-    <div>
-    <p id="beratBadan">Berat Badan (kg)</p>
-    <input type="number" id="berat" name="berat" required>
+
+
+    <div class="input-container" id="input-container">
+        <input type="text" id="nama" name="nama" required>
+        <label class="labelNama" for="nama">Nama</label>
+    </div>
+
+
+
+    <div class="input-container">
+    <input type="text" id="berat" name="berat" required>
+    <label class="labelBerat" for="berat">Berat Badan (Kg)</label>
+        
 </div>
 
-<div>   
-    <p id="umur">Usia (tahun)</p>
-    <input type="number" id="usia" name="usia" required>
+<div class="input-container">   
+    <input type="text" id="usia" name="usia" required>
+    <label class="labelUsia" for="usia">Usia (Tahun)</label>
+
 </div>
 
-<div>
-    <p id="tinggiBadan">Tinggi Badan (cm)</p>
-    <input type="number" id="tinggi" name="tinggi" required>
+<div class="input-container">
+    <input type="text" id="tinggi" name="tinggi" required>
+    <label class="labelTinggi" for="tinggi">Tinggi Badan (Cm)</label>
+
 </div>
 
 <button onclick="btnHitung()" id="btn-Hitung">Hitung BMI</button>
@@ -83,8 +100,10 @@
     <p id="berat-Badan"></p>
     <p id="angkaBMI"></p>
     <p id="andaMemiliki"> </p>
-    <button onclick="btn-download" id="btn-DownloadHasil">Download Hasil BMI</button>
+    <div id="btnDnR">
+    <button  id="btn-DownloadHasil">Download Hasil BMI</button>
     <button onclick="btnReset()" id="btn-Reset">Reset</button>
+    </div>
 </div>
 
     
@@ -105,16 +124,18 @@
                 <p id="penyakitDua"></p>
                 <p id="penyakitTiga"></p>
                 <p id="penyakitEmpat"></p>
-
-                <button class="btn-konsultasi">Konsultasi Ahli Gizi Via Aplikasi</button>
-                <button class="btn-registrasi">Registrasi Online Via Gizi</button>
+                <div id="moon">
+                <button onclick="window.open('http://wa.me/+6285892229740', '_blank')" class="btn-registrasi">Konsultasi Ahli Gizi Via Aplikasi</button>
+                <button onclick="window.open('http://wa.me/+6285892229740', '_blank')" class="btn-registrasi">Registrasi Online Via Gizi</button>
             </div>
+
+               </div>
 
 
 
 </div>
+<div class="container">
                 <h4>Download Aplikasi</h4>
-
                 <a href="https://play.google.com/" target="_blank">
                 <img class="gPlay" src="images/googlePlay.png" alt="googlePlay">
             </a>
@@ -122,11 +143,14 @@
                 <a href="https://www.apple.com/" target="_blank">
                 <img class="appStore" src="images/appStore.png" alt="appStore">
             </a>
-
+    </div>
             </div>
                         
 
 </div>
+
+
+
 </section>
 </div>
 </body>

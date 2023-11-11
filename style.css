@@ -36,6 +36,10 @@ h1{
     font-size: 50px;
 }
 
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #txtBerat{
     width: 50%;
     margin-top: 90px;
@@ -62,6 +66,7 @@ h3{
     width: 50%;
     margin: 20px auto;
     text-align: justify;
+    word-spacing: normal; 
 }
 
 /*KALKULATOR BMI*/
@@ -85,20 +90,134 @@ h3{
     margin-left: 1px;
 }
 
-#beratBadan{
-    margin-left: 20px;
-    margin-bottom: 1px;
+.input-container {
+    position: relative;
+    margin-top: 19px;
+    
 }
 
-#umur{
-    margin-left: 20px;
-    margin-bottom: 1px;
+.input-container.focused .labelNama,
+.input-container input:valid + .labelNama {
+    
+    top: -10px;
+    font-size: 12px;
+    
 }
 
-#tinggiBadan{
-    margin-left: 20px;
-    margin-bottom: 1px;
+.labelNama {
+    background-color: #5D4FF ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 13px;
+    left: 35px;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s;
+
 }
+
+#nama {
+    border-color: black;
+    background-color: #cbadf9;;
+    max-width: 70%;
+    margin-left: 25px; 
+    border-radius: 18px;
+    text-indent: 7px;
+    height: 20px;
+    margin-top: 10px;
+
+}
+
+.input-container.focused .labelBerat,
+.input-container input:valid + .labelBerat {
+    
+    top: -10px;
+    font-size: 12px;
+    
+}
+.labelBerat {
+    background-color: #5D4FF ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 12px;
+    left: 35px;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s;
+}
+#berat {
+    border-color: black;
+    background-color: #cbadf9;;
+    max-width: 70%;
+    margin-left: 25px; 
+    border-radius: 18px;
+    margin-top: 8px;
+    text-indent: 7px;
+    height: 20px;
+    margin-top: 9px;
+
+}
+
+.input-container.focused .labelUsia,
+.input-container input:valid + .labelUsia {
+    
+    top: -10px;
+    font-size: 12px;
+    
+}
+.labelUsia {
+    background-color: #5D4FF ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s;
+}
+#usia {
+    margin-left: 25px; 
+    border-color: black;
+    background-color: #cbadf9;;
+    max-width: 70%;
+    margin-left: 25px; 
+    border-radius: 18px;
+    margin-top: 7px;
+    text-indent: 7px;
+    height: 20px;
+
+}
+
+.input-container.focused .labelTinggi,
+.input-container input:valid + .labelTinggi {
+    
+    top: -10px;
+    font-size: 12px;
+    
+}
+.labelTinggi {
+    background-color: #5D4FF ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s;
+}
+#tinggi {
+    margin-left: 25px; 
+    border-color: black;
+    background-color: #cbadf9;;
+    max-width: 70%;
+    margin-left: 25px; 
+    border-radius: 18px;
+    margin-top: 7px;
+    text-indent: 7px;
+    height: 20px;
+}
+
+
 
 #Pria {
     margin-left: 20px;
@@ -108,24 +227,16 @@ h3{
     margin-left: 20px;
 }
 
-#berat {
-    margin-left: 20px;
-}
 
-#usia {
-    margin-left: 20px;
-}
 
-#tinggi{
-    margin-left: 20px;
-    margin-bottom: 15px;
-}
+
 
 #btn-Hitung {
     background-color: #D0A2F7;
     border-radius: 5px;
     border-color: black;
     margin-left: 65px;
+    margin-top: 17px;
     margin-bottom: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -157,7 +268,7 @@ h3{
 }
 
 #hasil{
-    margin-top: 90px;
+    margin-top: 30px;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -175,6 +286,11 @@ h3{
     padding-top: 20px;
 }
 
+#angkaBMI{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
 #btn-DownloadHasil{
     background-color:rgba(0, 0, 255, 0.4) ;
     border-radius: 5px;
@@ -187,6 +303,7 @@ h3{
     padding-right: 5px;
 }
 
+/*Button Konsultasi dan Registrasi*//
 .btn-konsultasi{
     width: 150px;
     height: 50px;
@@ -195,9 +312,10 @@ h3{
     border-color: black;
     margin-left: 20px;
     margin-right: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 2    0px;
     padding-top: 5px;
     padding-bottom: 5px;
+    
 }
 
 .btn-registrasi{
@@ -322,95 +440,4 @@ a:hover img {
     }
   }
 
-  /*Untuk HP*/
-  @media screen and (max-width: 800px) {
-    .bodyAll {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        align-content: center;
-    }
-
-    #radioBtn{
-        margin-left: 1px;
-    }
-    
-    .bungkusJenisKelamin {
-        width: 50%;
-    }
-    #jenisKelamin{
-            
-    padding-top: 20px;
-    margin-left: 40px;
-    margin-bottom: 1px;
-    }
-
-    #btn-Hitung {
-        width: 50%;
-        margin: px auto 0;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-    }
-    #berat {
-        max-width: 70%;
-        margin-left: 25px; 
-    }
-    #beratBadan {
-        margin-left: 25px; 
-    }
-    #usia{
-        max-width: 70%;
-        margin-left: 25px;
-    }
-    #umur {
-        margin-left: 25px; 
-    }
-    #tinggi{
-        max-width: 70%;
-        margin-left: 25px;
-    }
-    #tinggiBadan {
-        margin-left: 25px; 
-    }
-    #btn-Hitung {
-        margin-left: 25%;
-    }
-    #btn-DownloadHasil {
-        width: 50%;
-        margin: px auto 0;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    #btn-Reset {
-        width: 50%;
-        margin: px auto 0;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .btn-konsultasi{
-        margin-left: 7px;
-
-    }
-
-    .btn-registrasi{
-        margin-left: 7px;
-    }
-
-    .gPlay{
-        margin-left: 60px;
-        width: 90px;
-        height:40px;
-    }
-    .appStore{
-        width: 90px;
-        height: 40px;
-    }
-}
-
+ 
