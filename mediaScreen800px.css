@@ -1,209 +1,190 @@
- /*Untuk HP*/
+/*Untuk HP*/
 /*Animation*/
 .header {
-	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
- @-webkit-keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  @keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-
-  .hasil {
-    opacity: 1; /* Awalnya memiliki opacity 1 */
-    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes text-focus-in {
-    0% {
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 1; /* Tetapkan opacity 1 pada awal animasi */
-    }
-    100% {
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-        opacity: 1;
-    }
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.hasil {
+  opacity: 1; /* Awalnya memiliki opacity 1 */
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 1; /* Tetapkan opacity 1 pada awal animasi */
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes text-focus-in {
-    0% {
-        -webkit-filter: blur(12px);
-        filter: blur(12px);
-        opacity: 1; /* Tetapkan opacity 1 pada awal animasi */
-    }
-    100% {
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-        opacity: 1;
-    }
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 1; /* Tetapkan opacity 1 pada awal animasi */
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
- 
+@media screen and (max-width: 800px) {
+  .bodyAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-content: center;
+  }
 
+  #radioBtn {
+    margin-left: 1px;
+  }
 
- @media screen and (max-width: 800px) {
-    .bodyAll {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        align-content: center;
-    }
-
-    #radioBtn{
-        margin-left: 1px;
-    }
-    
-    .bungkusJenisKelamin {
-        width: 50%;
-    }
-    #jenisKelamin{
-            
+  .bungkusJenisKelamin {
+    width: 50%;
+  }
+  #jenisKelamin {
     padding-top: 20px;
     margin-left: 40px;
     margin-bottom: 1px;
-    }
+  }
 
-    #btn-Hitung {
-        width: 50%;
-        margin: px auto 0;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-    }
-    
+  #btn-Hitung {
+    width: 50%;
+    margin: px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
 
-    .input-container {
-        position: relative;
-        margin-top: 19px;
-        
-    }
+  .input-container {
+    position: relative;
+    margin-top: 19px;
+  }
 
-    .input-container.focused .labelNama,
-    .input-container input:valid + .labelNama {
-        
-        top: -8px;
-        font-size: 12px;
-        
-    }
+  .input-container.focused .labelNama,
+  .input-container input:valid + .labelNama {
+    top: -8px;
+    font-size: 12px;
+  }
 
-    .labelNama {
-        background-color: #5D4FF ;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        position: absolute;
-        
-        left: 35px;
-        pointer-events: none;
-        transition: top 0.3s, font-size 0.3s;
+  .labelNama {
+    background-color: #5D4FF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
 
-    }
+    left: 35px;
+    pointer-events: none;
+    transition: top 0.3s, font-size 0.3s;
+  }
 
-    #nama {
-        border-color: black;
-    background-color: #cbadf9;;
+  #nama {
+    border-color: black;
+    background-color: #cbadf9;
     max-width: 70%;
-    margin-left: 25px; 
+    margin-left: 25px;
     border-radius: 18px;
     text-indent: 7px;
     height: 20px;
-    }
+  }
 
-
-.input-container.focused .labelBerat,
-.input-container input:valid + .labelBerat {
-    
+  .input-container.focused .labelBerat,
+  .input-container input:valid + .labelBerat {
     top: -8px;
     font-size: 12px;
-    
-}
-.labelBerat {
-    background-color: #5D4FF ;
+  }
+  .labelBerat {
+    background-color: #5D4FF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     position: absolute;
     left: 35px;
     pointer-events: none;
     transition: top 0.3s, font-size 0.3s;
-}
-#berat {
+  }
+  #berat {
     border-color: black;
-    background-color: #cbadf9;;
+    background-color: #cbadf9;
     max-width: 70%;
-    margin-left: 25px; 
+    margin-left: 25px;
     border-radius: 18px;
     text-indent: 7px;
     height: 20px;
+  }
 
-}
-
-.input-container.focused .labelUsia,
-.input-container input:valid + .labelUsia {
-    
+  .input-container.focused .labelUsia,
+  .input-container input:valid + .labelUsia {
     top: -10px;
     font-size: 12px;
-    
-}
-.labelUsia {
-    background-color: #5D4FF ;
+  }
+  .labelUsia {
+    background-color: #5D4FF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     position: absolute;
-    margin-top:7px;
+    margin-top: 7px;
 
     top: 10px;
     left: 35px;
     pointer-events: none;
     transition: top 0.3s, font-size 0.3s;
-
-}
-#usia {
+  }
+  #usia {
     max-width: 70%;
-    margin-left: 25px; 
+    margin-left: 25px;
     border-color: black;
-    background-color: #cbadf9;;
+    background-color: #cbadf9;
     max-width: 70%;
-    margin-left: 25px; 
+    margin-left: 25px;
     border-radius: 18px;
     margin-top: 14px;
     text-indent: 7px;
     height: 20px;
+  }
 
-}
-
-.input-container.focused .labelTinggi,
-.input-container input:valid + .labelTinggi {
-    
+  .input-container.focused .labelTinggi,
+  .input-container input:valid + .labelTinggi {
     top: -10px;
     font-size: 12px;
-    
-}
-.labelTinggi {
-    background-color: #5D4FF ;
+  }
+  .labelTinggi {
+    background-color: #5D4FF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     position: absolute;
@@ -212,74 +193,68 @@
     left: 35px;
     pointer-events: none;
     transition: top 0.3s, font-size 0.3s;
-    
-
-}
-#tinggi {
+  }
+  #tinggi {
     max-width: 70%;
-    margin-left: 25px; 
+    margin-left: 25px;
     border-color: black;
-    background-color: #cbadf9;;
+    background-color: #cbadf9;
     max-width: 70%;
-    margin-left: 25px; 
+    margin-left: 25px;
     border-radius: 18px;
     margin-top: 10px;
     text-indent: 7px;
     height: 20px;
-}
+  }
 
+  #btn-Hitung {
+    margin-left: 25%;
+  }
+  #btn-DownloadHasil {
+    width: 50%;
+    margin: px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
 
-    #btn-Hitung {
-        margin-left: 25%;
-    }
-    #btn-DownloadHasil {
-        width: 50%;
-        margin: px auto 0;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-    }
+  #angkaBMI {
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
 
-    #angkaBMI{
-        margin-top: 1px;
-        margin-bottom: 1px;
-    }
+  #btn-Reset {
+    width: 50%;
+    margin: px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-    #btn-Reset {
-        width: 50%;
-        margin: px auto 0;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+  .btn-konsultasi {
+    margin-left: 7px;
+  }
 
-    .btn-konsultasi{
-        margin-left: 7px;
+  .btn-registrasi {
+    margin-left: 7px;
+  }
 
-    }
-
-    .btn-registrasi{
-        margin-left: 7px;
-    }
-
-    .container {
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        height: 8vh; 
-        
-    }
-    .gPlay{
-        margin-left: 1px;
-        width: 90px;
-        height:40px;
-        display: block;
-    }
-    .appStore{
-        width: 90px;
-        height: 40px;
-        display: block;
-
-    }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+  }
+  .gPlay {
+    margin-left: 1px;
+    width: 90px;
+    height: 40px;
+    display: block;
+  }
+  .appStore {
+    width: 90px;
+    height: 40px;
+    display: block;
+  }
 }

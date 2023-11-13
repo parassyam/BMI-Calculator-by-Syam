@@ -1,443 +1,418 @@
-
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #cfa2f7f6; 
-    z-index: 999; 
-  }
-  
-  .header h1 {
-    font-size: 40px;
-    margin-top: 10px; 
-    margin-bottom: 10px;
-  }
-
-  .header span{
-    margin-top: 80px;
-    margin-right: 10px;
-    font-family: 'Fredoka-Regular';
-  }
-
-
-body{
-    background-image: linear-gradient(rgba(0, 89, 255, 0.448), rgba(255, 255, 0, 0.505));
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #cfa2f7f6;
+  z-index: 999;
 }
 
+.header h1 {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header span {
+  margin-top: 80px;
+  margin-right: 10px;
+  font-family: "Fredoka-Regular";
+}
+
+body {
+  background-image: linear-gradient(
+    rgba(0, 89, 255, 0.448),
+    rgba(255, 255, 0, 0.505)
+  );
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
 /*Font*/
-h1{
-    font-family: 'Fredoka-Regular';
-    text-align: center;
-    font-size: 50px;
+h1 {
+  font-family: "Fredoka-Regular";
+  text-align: center;
+  font-size: 50px;
 }
 
-h3{
-    font-family: Arial, Helvetica, sans-serif;
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#txtBerat{
-    width: 50%;
-    margin-top: 110px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
+#txtBerat {
+  width: 50%;
+  margin-top: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
 }
 
-p{
-    font: 1em sans-serif;
-
+p {
+  font: 1em sans-serif;
 }
 
-h3{
-    
-    text-align: center;
+h3 {
+  text-align: center;
 }
 
-.MBbadan{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+.MBbadan {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
-.feature{
-    width: 50%;
-    margin: 20px auto;
-    text-align: justify;
-    word-spacing: normal; 
+.feature {
+  width: 50%;
+  margin: 20px auto;
+  text-align: justify;
+  word-spacing: normal;
 }
 
 /*KALKULATOR BMI*/
 .bungkusJenisKelamin {
-    width: 15%;
-    margin: 0 auto;
-    background-color: #E5D4FF;
-    border-radius: 10px;
+  width: 15%;
+  margin: 0 auto;
+  background-color: #e5d4ff;
+  border-radius: 10px;
 }
 
-#jenisKelamin{
-    
-    padding-top: 20px;
-    margin-left: 50px;
-    margin-bottom: 1px;
+#jenisKelamin {
+  padding-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 1px;
 }
-#Pria{
-    margin-left: 40px;
+#Pria {
+  margin-left: 40px;
 }
-#radioBtn{
-    margin-left: 1px;
+#radioBtn {
+  margin-left: 1px;
 }
 
 .input-container {
-    position: relative;
-    margin-top: 19px;
-    
+  position: relative;
+  margin-top: 19px;
 }
 
 .input-container.focused .labelNama,
 .input-container input:valid + .labelNama {
-    
-    top: -10px;
-    font-size: 12px;
-    
+  top: -10px;
+  font-size: 12px;
 }
 
 .labelNama {
-    background-color: #5D4FF ;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    position: absolute;
-    top: 13px;
-    left: 35px;
-    pointer-events: none;
-    transition: top 0.3s, font-size 0.3s;
-
+  background-color: #5D4FF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 13px;
+  left: 35px;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s;
 }
 
 #nama {
-    border-color: black;
-    background-color: #cbadf9;;
-    max-width: 70%;
-    margin-left: 25px; 
-    border-radius: 18px;
-    text-indent: 7px;
-    height: 20px;
-    margin-top: 10px;
-
+  border-color: black;
+  background-color: #cbadf9;
+  max-width: 70%;
+  margin-left: 25px;
+  border-radius: 18px;
+  text-indent: 7px;
+  height: 20px;
+  margin-top: 10px;
 }
 
 .input-container.focused .labelBerat,
 .input-container input:valid + .labelBerat {
-    
-    top: -10px;
-    font-size: 12px;
-    
+  top: -10px;
+  font-size: 12px;
 }
 .labelBerat {
-    background-color: #5D4FF ;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    position: absolute;
-    top: 12px;
-    left: 35px;
-    pointer-events: none;
-    transition: top 0.3s, font-size 0.3s;
+  background-color: #5D4FF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 12px;
+  left: 35px;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s;
 }
 #berat {
-    border-color: black;
-    background-color: #cbadf9;;
-    max-width: 70%;
-    margin-left: 25px; 
-    border-radius: 18px;
-    margin-top: 8px;
-    text-indent: 7px;
-    height: 20px;
-    margin-top: 9px;
-
+  border-color: black;
+  background-color: #cbadf9;
+  max-width: 70%;
+  margin-left: 25px;
+  border-radius: 18px;
+  margin-top: 8px;
+  text-indent: 7px;
+  height: 20px;
+  margin-top: 9px;
 }
 
 .input-container.focused .labelUsia,
 .input-container input:valid + .labelUsia {
-    
-    top: -10px;
-    font-size: 12px;
-    
+  top: -10px;
+  font-size: 12px;
 }
 .labelUsia {
-    background-color: #5D4FF ;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    position: absolute;
-    top: 10px;
-    left: 35px;
-    pointer-events: none;
-    transition: top 0.3s, font-size 0.3s;
+  background-color: #5D4FF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s;
 }
 #usia {
-    margin-left: 25px; 
-    border-color: black;
-    background-color: #cbadf9;;
-    max-width: 70%;
-    margin-left: 25px; 
-    border-radius: 18px;
-    margin-top: 7px;
-    text-indent: 7px;
-    height: 20px;
-
+  margin-left: 25px;
+  border-color: black;
+  background-color: #cbadf9;
+  max-width: 70%;
+  margin-left: 25px;
+  border-radius: 18px;
+  margin-top: 7px;
+  text-indent: 7px;
+  height: 20px;
 }
 
 .input-container.focused .labelTinggi,
 .input-container input:valid + .labelTinggi {
-    
-    top: -10px;
-    font-size: 12px;
-    
+  top: -10px;
+  font-size: 12px;
 }
 .labelTinggi {
-    background-color: #5D4FF ;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    position: absolute;
-    top: 10px;
-    left: 35px;
-    pointer-events: none;
-    transition: top 0.3s, font-size 0.3s;
+  background-color: #5D4FF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s;
 }
 #tinggi {
-    margin-left: 25px; 
-    border-color: black;
-    background-color: #cbadf9;;
-    max-width: 70%;
-    margin-left: 25px; 
-    border-radius: 18px;
-    margin-top: 7px;
-    text-indent: 7px;
-    height: 20px;
+  margin-left: 25px;
+  border-color: black;
+  background-color: #cbadf9;
+  max-width: 70%;
+  margin-left: 25px;
+  border-radius: 18px;
+  margin-top: 7px;
+  text-indent: 7px;
+  height: 20px;
 }
 
-
-
 #Pria {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #Wanita {
-    margin-left: 20px;
+  margin-left: 20px;
 }
-
-
-
-
 
 #btn-Hitung {
-    background-color: #D0A2F7;
-    border-radius: 5px;
-    border-color: black;
-    margin-left: 65px;
-    margin-top: 17px;
-    margin-bottom: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  background-color: #d0a2f7;
+  border-radius: 5px;
+  border-color: black;
+  margin-left: 65px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-#radioBtn{
-    margin-left: 20px;
+#radioBtn {
+  margin-left: 20px;
 }
 
-#btn-Hitung:hover{
-    
+#btn-Hitung:hover {
 }
 
 #btn-Reset {
-    width: 25%;
-    background-color: #fff5f5;
-    border-radius: 5px;
-    border-color: black;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
+  width: 25%;
+  background-color: #fff5f5;
+  border-radius: 5px;
+  border-color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /*Hasil*/
-.diantara{
-    width: 50%;
-    margin: 20px auto;
+.diantara {
+  width: 50%;
+  margin: 20px auto;
 }
 
-#hasil{
-    margin-top: 30px;
-    margin-bottom: 5px;
-    text-align: center;
+#hasil {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
-.BBLebih{
-    border-radius: 10px;
-    border-style:outset;
-    width: 50%;
-    margin: 0 auto;
-    background-color: #D0A2F7;
-    text-align: center;
+.BBLebih {
+  border-radius: 10px;
+  border-style: outset;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #d0a2f7;
+  text-align: center;
 }
 
-#berat-badan-lebih{
-    padding-top: 20px;
+#berat-badan-lebih {
+  padding-top: 20px;
 }
 
-#angkaBMI{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
+#angkaBMI {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
 }
 
-#btn-DownloadHasil{
-    background-color:rgba(0, 0, 255, 0.4) ;
-    border-radius: 5px;
-    border-color: black ;
-    margin-bottom: 20px;
-    width: 25%;
-    padding-top: 5px;
-    padding-bottom: 5px ;
-    padding-left: 5px;
-    padding-right: 5px;
+#btn-DownloadHasil {
+  background-color: rgba(0, 0, 255, 0.4);
+  border-radius: 5px;
+  border-color: black;
+  margin-bottom: 20px;
+  width: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-/*Button Konsultasi dan Registrasi*//
-.btn-konsultasi{
-    width: 150px;
-    height: 50px;
-    background-color: #0509f777;
-    border-radius: 5px;
-    border-color: black;
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-bottom: 2    0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
+/*Button Konsultasi dan Registrasi*/
+/ .btn-konsultasi {
+  width: 150px;
+  height: 50px;
+  background-color: #0509f777;
+  border-radius: 5px;
+  border-color: black;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 2 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.btn-registrasi{
-    width: 150px;
-    height: 50px;
-    background-color: #0509f777;
-    border-radius: 5px;
-    border-color: black;
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.btn-registrasi {
+  width: 150px;
+  height: 50px;
+  background-color: #0509f777;
+  border-radius: 5px;
+  border-color: black;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* Warna latar belakang saat tombol di-hover */
 
 #btn-Hitung:hover {
-    background-color: #000000a2; 
+  background-color: #000000a2;
 }
 
 #btn-Reset:hover {
-    background-color: #000000a2; 
+  background-color: #000000a2;
 }
 
 #btn-DownloadHasil:hover {
-    background-color: #000000a2; 
+  background-color: #000000a2;
 }
 
-
 .btn-konsultasi:hover {
-    background-color: #000000a2; 
+  background-color: #000000a2;
 }
 
 .btn-registrasi:hover {
-    background-color: #000000a2; 
+  background-color: #000000a2;
 }
-
-
 
 /*BEBERAPA PENYAKIT*/
-.beberapaPenyakit{
-    border-radius: 10px;
-    border-style:outset;
-    width: 50%;
-    margin: 0 auto;
-    background-color: #D0A2F7;
-    text-align: center;
+.beberapaPenyakit {
+  border-radius: 10px;
+  border-style: outset;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #d0a2f7;
+  text-align: center;
 }
 
-.beberapaPenyakit{
-    text-align: center;
-    margin-bottom: 10px;
+.beberapaPenyakit {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-#kegemukan{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 1px;
-    margin-bottom: 1px;
+#kegemukan {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
-h3{
-    margin-bottom: px;
+h3 {
+  margin-bottom: px;
 }
 
-h4{
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 22px;
-    margin-top: 30px;
-    margin-bottom: 10px;
+h4 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.gPlay{
-    
-    margin-left: 28%;
-   
-    width: 20%;
-    height: 20%;
+.gPlay {
+  margin-left: 28%;
+
+  width: 20%;
+  height: 20%;
 }
 
-.appStore{
-    margin-left: 40px;
-    width: 20%;
-    height: 20%;
+.appStore {
+  margin-left: 40px;
+  width: 20%;
+  height: 20%;
 }
 
 /* Mengurangi kecerahan gambar saat di-hover */
 a:hover img {
-    filter: brightness(0.7); 
+  filter: brightness(0.7);
 }
-
 
 /*Animation*/
 .header {
-	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
- @-webkit-keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
   }
-  @keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
   }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
 
- 
+/* Bagian dari Sweet Alert*/
+.swal2-popup {
+  border-radius: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
